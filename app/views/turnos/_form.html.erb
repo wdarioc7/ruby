@@ -1,0 +1,52 @@
+<%= form_for(turno) do |f| %>
+  <% if turno.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(turno.errors.count, "error") %> prohibited this turno from being saved:</h2>
+
+      <ul>
+      <% turno.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :alumno %>
+    <%= f.text_field :alumno %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comentario %>
+    <%= f.text_area :comentario %>
+  </div>
+
+  <div class="field">
+    <%= f.label :evaluacion %>
+    <%= f.number_field :evaluacion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha %>
+    <%= f.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hora %>
+    <%= f.time_select :hora %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numero %>
+    <%= f.text_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= f.label :texto %>
+    <%= f.text_area :texto %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

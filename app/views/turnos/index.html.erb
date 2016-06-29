@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Turnos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Alumno</th>
+      <th> </th>
+      <th>Comentario</th>
+      <th> </th>
+      <th>Evaluacion</th>
+      <th> </th>
+      <th>Fecha</th>
+      <th> </th>
+      <th>Hora</th>
+      <th> </th>
+      <th>Numero</th>
+      <th> </th>
+      <th>Texto</th>
+      <th colspan="3"></th> 
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @turnos.each do |turno| %>
+      <tr>
+        <td><%= turno.alumno %></td>
+        <td><%= turno.comentario %></td>
+        <td><%= turno.evaluacion %></td>
+        <td><%= turno.fecha %></td>
+        <td><%= turno.hora %></td>
+        <td><%= turno.numero %></td>
+        <td><%= turno.texto %></td>
+        <td><%= link_to 'Show', turno %></td>
+        <td><%= link_to 'Edit', edit_turno_path(turno) %></td>
+        <td><%= link_to 'Destroy', turno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Turno', new_turno_path %>

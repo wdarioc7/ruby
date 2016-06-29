@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  alumno: MyString
+  comentario: MyText
+  evaluacion: 1
+  fecha: 2016-06-29
+  hora: 2016-06-29 19:49:51
+  numero: 9.99
+  texto: MyText
+
+two:
+  alumno: MyString
+  comentario: MyText
+  evaluacion: 1
+  fecha: 2016-06-29
+  hora: 2016-06-29 19:49:51
+  numero: 9.99
+  texto: MyText

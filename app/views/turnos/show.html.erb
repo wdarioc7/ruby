@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Alumno:</strong>
+  <%= @turno.alumno %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= @turno.comentario %>
+</p>
+
+<p>
+  <strong>Evaluacion:</strong>
+  <%= @turno.evaluacion %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @turno.fecha %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @turno.hora %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @turno.numero %>
+</p>
+
+<p>
+  <strong>Texto:</strong>
+  <%= @turno.texto %>
+</p>
+
+<%= link_to 'Edit', edit_turno_path(@turno) %> |
+<%= link_to 'Back', turnos_path %>
